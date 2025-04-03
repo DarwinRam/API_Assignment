@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: grey;
+    padding: 20px;
+    display: grid;
+    place-items: center; /* Centers the container */
+    height: 100vh; /* Full height */
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto auto auto; /* Rows for button, image, and text */
+    gap: 15px;
+    max-width: 600px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    justify-self: center; /* Centers the button */
+}
+button:hover{
+    color: red;
+}
+
+img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+}
